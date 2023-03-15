@@ -9,4 +9,5 @@ set incsearch
 set number
 set ruler
 set shiftwidth=2
+set softtabstop=2
 set tabstop=2
