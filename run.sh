@@ -9,8 +9,12 @@ sudo spctl --master-disable
 # dont show icons on desktop
 defaults write com.apple.finder CreateDesktop false
 
-# install brew packages
-brew install $(cat packages)
-
 # set key repeat on hold
 defaults write -g ApplePressAndHoldEnabled -bool false
+
+
+# install homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# install brew packages
+brew install $(cat packages)
