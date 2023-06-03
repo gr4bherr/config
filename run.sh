@@ -9,6 +9,9 @@ sudo spctl --master-disable
 # dont show icons on desktop
 defaults write com.apple.finder CreateDesktop false
 
+# dont play chime when charger plugged in 
+defaults write com.apple.PowerChime ChimeOnNoHardware -bool true; killall PowerChime
+
 # set key repeat on hold
 defaults write -g ApplePressAndHoldEnabled -bool false
 
