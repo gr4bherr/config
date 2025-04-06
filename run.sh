@@ -14,7 +14,7 @@ echo "allow applications downloaded from anywhere"
 sudo spctl --master-disable
 
 echo "disable dock show delay"
-defaults write com.apple.Dock autohide-delay -float 0 && killall Dock
+defaults write com.apple.dock autohide-delay -float 0 && killall Dock
 
 echo "dont show icons on desktop"
 defaults write com.apple.finder CreateDesktop false
@@ -25,8 +25,8 @@ defaults write com.apple.PowerChime ChimeOnNoHardware -bool true; killall PowerC
 echo "set key repeat on hold"
 defaults write -g ApplePressAndHoldEnabled -bool false
 
-echo "disable disk not ejected propely message"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.DiskArbitration.diskarbitrationd.plist DADisableEjectNotification -bool YES && sudo pkill diskarbitrationd
-
 echo "analytics off"
 brew analytics off
+
+echo "install brew packages"
+brew install $(cat packages.txt)

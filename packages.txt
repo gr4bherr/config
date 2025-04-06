@@ -1,12 +1,9 @@
-4k-video-downloader
-balenaEtcher
-bartender
+hiddenbar
 iina
 omnidisksweeper
-postman
+orbstack
 rectangle-pro
 scroll-reverser
-sensiblesidebuttons
 spotify
 stats
 transmission
