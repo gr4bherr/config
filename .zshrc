@@ -1,4 +1,3 @@
-PS1="%n %~ %# "
-
-export PATH=/usr/local/bin:$PATH
-export PATH=/opt/homebrew/bin:$PATH
+export PS1="%n %~ %# "
+export CLICOLOR=1
+export EDITOR='vim'

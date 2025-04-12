@@ -1,5 +1,10 @@
+basictex
+dbeaver-community
+eloston-chromium
+firefox
 hiddenbar
 iina
+obsidian
 omnidisksweeper
 orbstack
 rectangle-pro

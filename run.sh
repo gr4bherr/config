@@ -1,11 +1,11 @@
 #!/bin/bash
 
 echo "move .vimrc to ~/"
-mv .vimrc ~/
+cp .vimrc ~/
 echo "zshrc .vimrc to ~/"
-mv .zshrc ~/
+cp .zshrc ~/
 echo ".tmux to ~/"
-mv .tmux.conf ~/
+cp .tmux.conf ~/
 
 echo "dont show last login in terminal"
 touch ~/.hushlogin
@@ -29,4 +29,5 @@ echo "analytics off"
 brew analytics off
 
 echo "install brew packages"
-brew install $(cat packages.txt)
+brew install $(cat leaves.txt)
+brew install --cask $(cat casks.txt)
