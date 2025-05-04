@@ -4,6 +4,7 @@ eloston-chromium
 firefox
 hiddenbar
 iina
+libreoffice
 obsidian
 omnidisksweeper
 orbstack
